@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Boxes</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .box {
+    width: 100%; /* Width as per mobile screen width */
+    max-width: calc(100vw - 40px); /* Limiting max-width to screen width minus padding */
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    cursor: pointer; /* Make the boxes clickable */
+  }
+  .box p {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+  }
+  .box .blue-text {
+    color: blue; /* Color of the text to be blue */
+  }
+  .box .red-text {
+    color: darkred; /* Dark red color for the text */
+    font-weight: bold; /* Bold font for the text */
+  }
+  .box p strong {
+    font-weight: bold; /* Make the second line bold */
+  }
+  .search-box {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center; /* Center align the text within the input */
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="searchInput" class="search-box" oninput="searchFunction()" placeholder="Search...">
+    
+        <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=9068421&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Sohail Anjum Civil</strong><br>
+        <strong>Manzoor ilahi vs muhammad shafee </strong><br>
+        istaqrar haq.                      <br><span class="red-text">Plot no 53-9-U 7 marla</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=96065323&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Iram Atta Sahiba Civil</strong><br>
+        <strong>Jamia Khyr ul Aloom vs Soba Punjab</strong><br>
+        istaqrar haq.                      <br><span class="red-text">Plot no Neelami<br>Plot Mumtazabad</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=2515717&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text">Maqsood Ahmad Anjum Civil</strong><br>
+        <strong>Ch Nawazish Ali vs Ch Muhabbat Ali</strong><br>
+        iijrah.                      <br><span class="red-text">Plot no 284-B Gulgasht4</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=166340623&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text">Asif Nawaz Civil</strong><br>
+        <strong>Amanullah vs Naseer Ullah</strong><br>
+        ijrah                   <br><span class="red-text">Plot no 208-C Mumtazabad</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=1665516&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text">Maqsood Ahmad Anjum Civil</strong><br>
+        <strong>District Officer vs Fazlan Mai</strong><br>
+        istaqrar haq.                      <br><span class="red-text">Plot no 36-10-Z 5 marla</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=2255217&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"></strong><br>Munnazza Shabir Abbasi Civil</strong><br>
+        <strong>Sabira Mehfooz vs Fakeer Jahan</strong><br>
+        ijrah                    <br><span class="red-text">Plot no 76-100-S</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=453313&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Sohail Anjum Civil</strong><br>
+        <strong>Maraj Khalid vs Uzma Sattar</strong><br>
+        istaqrar haq.                      <br><span class="red-text">Plot no 8-P-S</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=9460519&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Hassan Dilber Civil</strong><br>
+        <strong>Muhammad Usman Hadi vs Perver. Hadi</strong><br>
+        istaqrar haq.                      <br><span class="red-text">Plot no 24-B Mumtazabad</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=11027822&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Hassan Dilber Civil</strong><br>
+        <strong>Zohaib Munawer vs Deputy Director</strong><br>
+        istaqrar haq.                      <br><span class="red-text">Plot no 47-G-W 3 marla</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=317474823&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text">Hassan Dilber Civil</strong><br>
+        <strong>Abdul Jabbar vs Farhan Ud Din</strong><br>
+        istaqrar haq.                      <br><span class="red-text">Plot no 50-B Gulgasht</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=245414122&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Maqsood Ahmad Anjum Civil</strong><br>
+        <strong>Muhammad Asim vs Muhammad Iftikhar</strong><br>
+        ijrah.      <br><span class="red-text">Plot no 57-30-T Commercial 15 marla</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=5478324&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Asif Nawaz Civil</strong><br>
+        <strong>Ishfaq Qamer vs Phata </strong><br>
+        istaqrar haq.                      <br><span class="red-text">Plot no 34-A Gulgasht</span>
+      </p>
+    </div>
+
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=15851824&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Akhtar Ali Civil</strong><br>
+        <strong>Shabir Ahmad vs Awamunas</strong><br>
+        istaqrar haq.                      <br><span class="red-text">Plot no 281-C Mumtazabad</span>
+      </p>
+    </div>
+
+  
+        <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=69301821&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Akhtar Ali Civil </strong><br>
+        <strong>Shamim Akhtar vs Anjum raza </strong><br>
+        istaqrar haq.                        <br><span class="red-text">Plot no 112-A  mumtazabad </span>
+      </p>
+    </div>
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=194383624&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Sohail anjum civil</strong><br>
+        <strong>Samina dilber vs nadra </strong><br>
+        istaqrar haq.                       <br><span class="red-text">Plot no 86-B  mumtazabad  faisla shud </span>
+      </p>
+    </div>
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=31149820&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Komal Tabasum Civil</strong><br>
+        <strong>Kamran iftikhar  vs Mukhtiar Ahmad </strong><br>
+        istaqrar haq.                        <br><span class="red-text">Plot no 20-A Gulgasht </span>
+      </p>
+    </div>
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=155113622&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Faraz Tabasum Civil</strong><br>
+        <strong> Muhammad Shafique vs Liaqat Ali </strong><br>
+        istaqrar haq.                       <br><span class="red-text">Plot no 1-B-X 7 marla </span>
+      </p>
+    </div>
+    <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=8718919&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text">Faraz Tabasum Civil</strong><br>
+        <strong>Muhammad Rafique vs Ali garh</strong><br>
+        istaqrar haq.                       <br><span class="red-text">Plot no 107-A Gulgasht </span>
+      </p>
+    </div>
+    
+   
+
+
+ 
+        <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=182088824&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Saifullah ADJ </strong><br>
+        <strong> Abdul Rehman vs Khuda Baksh etc</strong><br>
+        Apeal Dewani                     <br><span class="red-text">Plot no 7-E-T 05 marla </span>
+      </p>
+    </div>
+    
+       <div class="box" style="width: calc(100% - 20px);" onclick="window.open('https://dsj.punjab.gov.pk/search?district_id=22&case_title=&case_no=155113622&court_id=&casecate_id=0&fir_no=&fir_year=&policestation_id=', '_blank', '_blank');">
+      <p>
+        <strong class="blue-text"> Faraz Tabasum Civil</strong><br>
+        <strong> Muhammad Shafique vs Liaqat Ali </strong><br>
+        istaqrar haq.                       <br><span class="red-text">Plot no 1-B-X 7 marla </span>
+      </p>
+    </div>
+    
+    
+    
+    
+  </div>
+
+
+
+
+
+<script>
+  function searchFunction() {
+    var input, filter, boxes, p, txtValue, allText;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    boxes = document.getElementsByClassName("box");
+
+    for (var i = 0; i < boxes.length; i++) {
+      p = boxes[i].getElementsByTagName("p")[0];
+      // Get all text content of the <p> element
+      allText = p.textContent || p.innerText;
+      // Convert to uppercase for case-insensitive comparison
+      txtValue = allText.toUpperCase();
+
+      if (txtValue.indexOf(filter) > -1) {
+        boxes[i].style.display = "";
+      } else {
+        boxes[i].style.display = "none";
+      }
+    }
+  }
+</script>
+</body>
+</html>
